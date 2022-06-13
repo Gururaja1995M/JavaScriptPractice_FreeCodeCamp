@@ -41,4 +41,56 @@ console.log(b); //15
 console.log(c); // I am a String
 
 
-// 23 minutes over
+// string declaration
+
+var firstName="Guru";
+var lastName="Raj";
+console.log(firstName);
+
+//Escaping quote characters
+var myStr="I am learning \"Java Script\" from the begining";
+
+//Quoting Strings with single quotes
+var s1='I am learning "Java Script" from the begining';
+
+console.log("***********************");
+var s2="FirstLine\n\t\\SecondLine\nThirdLine"
+console.log(s2);
+
+
+// string concatination + operator
+var str1="Java" + "Script";
+
+// string concatination + = operator
+var ourStr="I come first. ";
+ourStr += "I come second. ";
+console.log(ourStr);
+
+// string with variables
+var myName="Guru"
+var myStr= "My name is " +myName+ " and I am well!";
+console.log(myStr);
+
+//Appending variables to string
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is "
+ourStr += anAdjective;
+console.log(ourStr);
+
+//String length
+var firstNameLength=0;
+var firstName="Guru";
+
+firstNameLength=firstName.length;
+console.log(firstNameLength);
+console.log(firstName[firstName.length-1]);
+
+//Bracket notation to find first character in string
+var firstLetterOfFirstName=firstName[0];
+console.log(firstLetterOfFirstName);
+
+//String Immutability
+var s3="Jello World";
+
+s3[0] = "H"; //Wont works (Strings can not be altered once its created)
+console.log(s3);
