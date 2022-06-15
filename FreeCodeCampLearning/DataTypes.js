@@ -94,3 +94,13 @@ var s3="Jello World";
 
 s3[0] = "H"; //Wont works (Strings can not be altered once its created)
 console.log(s3);
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+var result = "";
+result += "The "+myAdjective+ " "+ myNoun + " "+ myVerb + " to the store " + myAdverb;
+
+return result;
+}
+
+console.log(wordBlanks("dog","big", "ran", "quickly"));
+console.log(wordBlanks("bike","slow", "flew", "slowly"));
