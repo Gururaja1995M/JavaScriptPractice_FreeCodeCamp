@@ -77,7 +77,7 @@ function addThree(){
     sum = sum + 3;
 }
 */
-
+/*
 //Assignment with a Returned Value
 var changed = 0;
 
@@ -96,5 +96,16 @@ function processArg(num){
 
 processed = processArg(7);
 console.log(processed); // 2
+*/
+//Stand in Line
+function nextLine(arr, item){
+arr.push(item);
 
-//01:05:45
+    return arr.shift();
+}
+
+var testArr= [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextLine(testArr,6))
+console.log("After: " + JSON.stringify(testArr));
