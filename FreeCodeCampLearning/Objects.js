@@ -52,5 +52,82 @@ console.log(player);
 // follow 1 st example
 //ourDog.name = ""Happy Camper";
 
+/*
 //Add new properties to an object
-//1:54:30
+var ourDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything!"]
+};
+ourDog.bark = "bow-bow";
+console.log(ourDog.bark);
+ourDog["bark2"] = "woof";
+console.log(ourDog.bark2);
+
+//Delete Properties From an Object
+delete ourDog.legs;
+console.log(ourDog.legs); //Undefined
+*/
+/*
+// Using Objects for Lookups
+function phoneticLookup(val) {
+    var result = "";
+
+    switch(val){
+        case "alpha":
+            result = "Adams";
+            break;
+        case "bravo":
+            result = "Boston";
+            break;
+        case "charlie":
+            result = "chicago";
+            break;
+        case "delta":
+            result = "Denver";
+            break;
+        case "echo":
+            result = "Easy";
+            break;
+        case "foxtrot":
+            result = "Frank";
+            break;
+    }
+    return result;
+}
+console.log(phoneticLookup("delta"));
+
+function phoneticLookup2(val) {
+    var result = "";
+    
+    var lookup = {
+   "alpha": "Adams",
+   "bravo": "Boston",
+   "charlie": "Chicago",
+   "delta": "Denver",
+   "echo": "Easy",
+   "foxrot": "frank" 
+}
+result = lookup[val];
+return result;
+}
+console.log(phoneticLookup2("echo"));
+*/
+
+// Testing Objects for properties
+var myObj = {
+    "gift": "pony",
+    "pet": "kitten",
+    bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+    if (myObj.hasOwnProperty(checkProp)) {
+        return myObj[checkProp];
+    }else{
+        return "Not Found";
+    }
+
+}
+console.log(checkObj("bed"));
