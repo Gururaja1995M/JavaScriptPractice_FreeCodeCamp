@@ -219,4 +219,52 @@ return answer2;
 console.log(sequentialSizes(5));
 */
 
+/*
+// Iterate with while loops
+var myArray = [];
 
+var i = 0;
+while(i < 5) {
+    myArray.push(i);
+    i++;
+}
+console.log(myArray);
+*/
+
+/*
+// Iterate with for loop
+var ourArray = [];
+
+for (var i=0; i<5; i++){
+    ourArray.push(i);
+}
+console.log(ourArray);
+*/
+/*
+//Nesting for loops
+
+function multiplyAll(arr) {
+    var product = 1;
+
+    for (var i=0; i<arr.length; i++){
+        for (var j=0; j<arr[i].length; j++){
+            product=product*arr[i][j];
+        }
+    }
+    return product;
+}
+
+var product=multiplyAll([[1,2],[3,4]]);
+console.log(product);
+*/
+
+// Iterate with Do...While loops
+var myArray = [];
+var i=10;
+
+do {
+    myArray.push(i);
+    i++;
+}while(i<5);
+
+console.log(myArray);
