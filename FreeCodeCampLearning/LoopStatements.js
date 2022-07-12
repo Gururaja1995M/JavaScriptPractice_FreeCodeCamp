@@ -268,3 +268,4 @@ do {
 }while(i<5);
 
 console.log(myArray);
+//2:24:10
